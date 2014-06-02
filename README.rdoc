@@ -1,28 +1,23 @@
-== README
+Explain what you accomplished in this lesson
+-Step by step process of creating a new rails app
+-what gems are and how each one works
+-learned to how to generate new rails app using postgres
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Explain what the following gems do:
+better_errors- replaces the standard Rails error page with a much better and more useful error page.
 
-Things you may want to cover:
+quiet_assets- turns off the Rails asset pipeline log. This means that it suppresses messages in your development log.
 
-* Ruby version
+meta_request- supporting gem for rails panel, a google chrome extension.
 
-* System dependencies
+awesome_print- a Ruby library that pretty prints Ruby objects in full color exposing their internal structure with proper indentation.
+pry_rails- a small gem which causes rails console to open pry
 
-* Configuration
+binding_of_caller-  we can grab bindings from higher up the call stack and evaluate code in that context. Allows access to 
+bindings arbitrarily far up the call stack, not limited to just the immediate caller.
 
-* Database creation
+pry-byebug- Fast execution control in Pry
 
-* Database initialization
+What does bundle install actaully do? - installs all the gems you have included in your rails app. Must run everytime you add/delete a gem in your Gemfile.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Why do we use Postgres instead of sqlite3? postgres is based on the object relational DBMS 
