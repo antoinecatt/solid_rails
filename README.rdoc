@@ -21,3 +21,14 @@ pry-byebug- Fast execution control in Pry
 What does bundle install actaully do? - installs all the gems you have included in your rails app. Must run everytime you add/delete a gem in your Gemfile.
 
 Why do we use Postgres instead of sqlite3? postgres is based on the object relational DBMS 
+
+
+Explain what you accomplished in this lesson
+Deleted unneccessary generated files for this app.
+Changing generated routes into our own.
+
+What is Capybara?
+Capybara helps you test web applications by simulating how a real user would interact with your app.
+
+What is the spec_helper?
+The spec_helper.rb file rspec-rails generates is convenient, as it sets up everything you need to get your tests running. In your actual test, all you have to do is require "spec_helper" and off you go. After waiting for a while.
