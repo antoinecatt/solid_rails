@@ -64,12 +64,12 @@ Understand what scaffolding is and what are the files it generated:
       create      app/views/things/new.html.erb
       create      app/views/things/_form.html.erb
       invoke    rspec- rspec tests for actions to check if they are working.
-      create      spec/controllers/things_controller_spec.rb
-      create      spec/views/things/edit.html.erb_spec.rb
-      create      spec/views/things/index.html.erb_spec.rb
-      create      spec/views/things/new.html.erb_spec.rb
-      create      spec/views/things/show.html.erb_spec.rb
-      create      spec/routing/things_routing_spec.rb
+      create      spec/controllers/things_controller_spec.rb- checks to see if actions are woking perfectly
+      create      spec/views/things/edit.html.erb_spec.rb-checks if it renders edit thing form
+      create      spec/views/things/index.html.erb_spec.rb- checks if it renders a list of things
+      create      spec/views/things/new.html.erb_spec.rb- checks if it renders new thing form
+      create      spec/views/things/show.html.erb_spec.rb- renders attributes in <p>
+      create      spec/routing/things_routing_spec.rb-checks to see if routes are woking perfectly
       invoke      rspec- test to check if site responds 200:ok
       create        spec/requests/things_spec.rb
       invoke    helper- generated a helper
@@ -83,3 +83,6 @@ Understand what scaffolding is and what are the files it generated:
       invoke    coffee- coffeescript
       create      app/assets/javascripts/things.js.coffee
       invoke    scss
+
+      Never use scaffolding when creating a project because it generates files that we might not want in there
+      and it will create all kinds of mess when trying to develop the app.
