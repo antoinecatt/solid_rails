@@ -32,3 +32,14 @@ Capybara helps you test web applications by simulating how a real user would int
 
 What is the spec_helper?
 The spec_helper.rb file rspec-rails generates is convenient, as it sets up everything you need to get your tests running. In your actual test, all you have to do is require "spec_helper" and off you go. After waiting for a while.
+
+Explain what you accomplished in this lesson
+using link_to and path helpers.
+applying bootstrap.
+learned about sass and using variables in bootstrap.
+
+What is bootstrap?
+bootstrap is a frontend framework that contains html and css preloaded to beautify your website
+
+What is responsive design?
+a web design approach aimed at crafting sites to provide an optimal viewing experience—easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices
