@@ -35,13 +35,13 @@ group :development do
     gem 'awesome_print' # In the rails console: ap Account.limit(2).all
     gem 'pry-rails' # Uses pry instead of irb for the console
     gem 'pry-byebug'
+    gem 'capybara'
 end
 
 group :development, :test do
-    gem 'rspec-rails'
+    gem 'rspec-rails', '2.99'
 end
 
-gem 'capybara'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
