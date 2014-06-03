@@ -43,3 +43,43 @@ bootstrap is a frontend framework that contains html and css preloaded to beauti
 
 What is responsive design?
 a web design approach aimed at crafting sites to provide an optimal viewing experience—easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices
+
+Explain what you accomplished?
+Understand what scaffolding is and what are the files it generated:
+
+      invoke  active_record- Created a table
+      create    db/migrate/20140528055411_create_things.rb-the migration file.
+      create    app/models/thing.rb- generated a model called Thing
+      invoke    rspec- since we have rspec installed, it all generated some rspec tests.
+      create      spec/models/thing_spec.rb
+      invoke  resource_route- generated RESTful routes
+       route    resources :things
+      invoke  scaffold_controller- generated a controller called things with the actions preloaded in it.
+      create    app/controllers/things_controller.rb
+      invoke    erb- generated views file for some of the action inside the controller.
+      create      app/views/things
+      create      app/views/things/index.html.erb
+      create      app/views/things/edit.html.erb
+      create      app/views/things/show.html.erb
+      create      app/views/things/new.html.erb
+      create      app/views/things/_form.html.erb
+      invoke    rspec- rspec tests for actions to check if they are working.
+      create      spec/controllers/things_controller_spec.rb
+      create      spec/views/things/edit.html.erb_spec.rb
+      create      spec/views/things/index.html.erb_spec.rb
+      create      spec/views/things/new.html.erb_spec.rb
+      create      spec/views/things/show.html.erb_spec.rb
+      create      spec/routing/things_routing_spec.rb
+      invoke      rspec- test to check if site responds 200:ok
+      create        spec/requests/things_spec.rb
+      invoke    helper- generated a helper
+      create      app/helpers/things_helper.rb
+      invoke      rspec- helper spec file
+      create        spec/helpers/things_helper_spec.rb
+      invoke    jbuilder- creates JSON structures via a Builder-style DSL.
+      create      app/views/things/index.json.jbuilder
+      create      app/views/things/show.json.jbuilder
+      invoke  assets- includes javascript,images and stylesheets.
+      invoke    coffee- coffeescript
+      create      app/assets/javascripts/things.js.coffee
+      invoke    scss
