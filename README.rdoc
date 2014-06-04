@@ -86,3 +86,17 @@ Understand what scaffolding is and what are the files it generated:
 
       Never use scaffolding when creating a project because it generates files that we might not want in there
       and it will create all kinds of mess when trying to develop the app.
+
+Explain what you did this lesson
+
+Why do we use validations?
+
+Name at least 3 types of default Rails(non-custom) validations
+
+What are some things that you might want to write a custom validation for?
+
+When are your models actually validated?
+
+Explain the difference between client-side and server-side validations.
+
+How do rails validation errors work? If there's an error saving a model, how do you access that error and display it?

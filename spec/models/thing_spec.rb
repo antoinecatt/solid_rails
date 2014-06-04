@@ -11,7 +11,7 @@ require 'spec_helper'
   let(:valid_description) { 'Description of Thing' }
   let(:long_description) { 'N' * 501 }
 
-  let(:valid_thing) {  build(:thing)  }
+  let(:valid_thing) {  build(:thing)  } 
 
   it 'should be valid' do
     expect(valid_thing).to be_valid
