@@ -100,3 +100,9 @@ When are your models actually validated?
 Explain the difference between client-side and server-side validations.
 
 How do rails validation errors work? If there's an error saving a model, how do you access that error and display it?
+
+Explain what you did
+Explain what is the difference between .find_or_create_by and find_or_initialize_by
+What does the forgery gem do?
+What other gems are out there to help create seed data?
+How do you select a random element from an array?
