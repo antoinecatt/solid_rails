@@ -40,10 +40,13 @@ end
 
 group :development, :test do
     gem 'rspec-rails', '2.99'
+    gem 'factory_girl_rails', '~> 4.0'
 end
   
     gem 'bootstrap-sass'
     gem 'bootstrap-generators', '~> 3.1.1'
+
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
