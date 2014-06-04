@@ -106,3 +106,16 @@ Explain what is the difference between .find_or_create_by and find_or_initialize
 What does the forgery gem do?
 What other gems are out there to help create seed data?
 How do you select a random element from an array?
+
+Explain what you did
+Explain each of these devise behaviours:
+Confirmable
+Recoverable
+Registerable
+Rememberable
+Trackable
+Timeoutable
+Validatable
+Lockable
+What did you have to do to update your rspec tests after adding authentication for the things
+What are the routes that were added and what do they do?

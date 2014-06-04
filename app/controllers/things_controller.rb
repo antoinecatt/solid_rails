@@ -1,20 +1,24 @@
 class ThingsController < ApplicationController
   before_action :set_thing, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, :current_user
 
   # GET /things
   # GET /things.json
   def index
     @things = Thing.all
+     
   end
 
   # GET /things/1
   # GET /things/1.json
   def show
+
   end
 
   # GET /things/new
   def new
     @thing = Thing.new
+      
   end
 
   # GET /things/1/edit
