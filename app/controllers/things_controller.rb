@@ -1,6 +1,6 @@
 class ThingsController < ApplicationController
   before_action :set_thing, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, :current_user
+  before_action :authenticate_user!
 
   # GET /things
   # GET /things.json
@@ -29,7 +29,7 @@ class ThingsController < ApplicationController
   # POST /things.json
   def create
     @thing = Thing.new(thing_params)
-
+    
     respond_to do |format|
       if @thing.save
         format.html { redirect_to @thing, notice: 'Thing was successfully created.' }

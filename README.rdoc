@@ -88,10 +88,14 @@ Understand what scaffolding is and what are the files it generated:
       and it will create all kinds of mess when trying to develop the app.
 
 Explain what you did this lesson
+added validations
 
 Why do we use validations?
 
+Learned how to use and make tests for factorygirl
+
 Name at least 3 types of default Rails(non-custom) validations
+presence, uniqueness, length
 
 What are some things that you might want to write a custom validation for?
 
@@ -103,11 +107,26 @@ How do rails validation errors work? If there's an error saving a model, how do 
 
 Explain what you did
 Explain what is the difference between .find_or_create_by and find_or_initialize_by
+.find_or_create_by - checks whether a record with the attributes exist. if it doesnt
+then create is called.
+find_or_initialize_by - works just like find_or_create_by but it will call new instead of create.
+this means that a new model instance will be created in memory but wont be saved to the database.
+
 What does the forgery gem do?
+The forgery gem helps us create fake data to avoid hard coding seed files.
+
 What other gems are out there to help create seed data?
+seedbank, seed_dump
+
 How do you select a random element from an array?
+.sample method 
 
 Explain what you did
+Added a root route to the hello world page
+added devise and created a User model
+installed devise views
+added an authentication check to all actions on the Things controller
+fixed rspec tests: added tests in things_spec.rb, added users.rb with fake email and password.
 Explain each of these devise behaviours:
 Confirmable
 Recoverable
