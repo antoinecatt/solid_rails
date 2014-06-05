@@ -11,7 +11,7 @@ class ThingsController < ApplicationController
   end
 
   def my_things
-    @my_things = current_user.things.all
+    @things = current_user.things.all
   end
   # GET /things/1
   # GET /things/1.json

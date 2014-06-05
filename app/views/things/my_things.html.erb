@@ -3,8 +3,25 @@
     <span class="glyphicon glyphicon-plus"></span>
     New Thing
   <% end %>
-  <h1>My things</h1>
+  <h1>Listing things</h1>
+</div>
 
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+      <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
 
-  <%= render 'things' %>
+    <tbody>
+      
+          <%= render @things %>
+      
+    </tbody>
+  </table>
 </div>
