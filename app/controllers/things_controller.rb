@@ -1,5 +1,6 @@
 class ThingsController < ApplicationController
   before_action :set_thing, only: [:show, :edit, :update, :destroy]
+  before_action :authorize, only: [:edit, :destroy]
   before_action :authenticate_user!
 
   # GET /things
@@ -9,6 +10,9 @@ class ThingsController < ApplicationController
      
   end
 
+  def my_things
+    @my_things = current_user.things.all
+  end
   # GET /things/1
   # GET /things/1.json
   def show
@@ -23,13 +27,15 @@ class ThingsController < ApplicationController
 
   # GET /things/1/edit
   def edit
+
   end
 
   # POST /things
   # POST /things.json
   def create
-    @thing = Thing.new(thing_params)
+    @thing = current_user.things.new(thing_params)
     
+
     respond_to do |format|
       if @thing.save
         format.html { redirect_to @thing, notice: 'Thing was successfully created.' }
@@ -73,6 +79,17 @@ class ThingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def thing_params
-      params.require(:thing).permit(:name, :description)
+      params.require(:thing).permit(:name, :description, :user_id)
+    end
+
+    def authorize
+      
+        if current_user.id == @thing.user_id
+          flash[:notice] = 'Successfully created'
+        else
+          flash[:notice] = 'You\'re not allowed to edit this thing!'
+          redirect_to things_path
+        end
+      
     end
 end

@@ -1,11 +1,4 @@
-<div class="page-header">
-  <%= link_to new_thing_path, :class => 'btn btn-primary' do %>
-    <span class="glyphicon glyphicon-plus"></span>
-    New Thing
-  <% end %>
-  <h1>Listing things</h1>
-
- <div class="table-responsive">
+<div class="table-responsive">
   <table class="table table-striped table-bordered table-hover">
     <thead>
       <tr>
@@ -18,7 +11,7 @@
     </thead>
 
     <tbody>
-      <%= @thing.each do |thing| %>
+      <%= content_tag_for(:tr, @thing) do |thing| %>
             <td><%= thing.name %></td>
             <td><%= thing.description %></td>
             <td><%= link_to 'Show', thing %></td>
